@@ -6,3 +6,14 @@ name = input("Enter your name please:")
 print("Hello " + name + "," + " enjoy the game!")
 print("Are you ready?, let's start")
 
+
+
+def hangman():
+
+def replay():    
+
+def main():
+
+
+
+
