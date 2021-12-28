@@ -7,11 +7,11 @@ print("Hello " + name + "," + " enjoy the game!")
 print("Are you ready?, let's start")
 
 #Add dictonary for words selection
-dictonary= ["year","dog","name","twenty","car","february",
-    "window","computer","coffee","hawk","shopping","bat",
-    "lane","tower","crystal","gold","silver","cat",
-    "impossible","nice","game","sharp","books","radio",
-    "speed","slow","nothing","history","mountain","lake"]
+dictonary = ["year", "dog", "name", "twenty", "car", "february",
+    "window", "computer", "coffee", "hawk", "shopping", "bat", 
+    "lane", "tower", "crystal", "gold", "silver", "cat", 
+    "impossible", "nice", "game", "sharp", "books", "radio", 
+    "speed", "slow", "nothing", "history", "mountain", "lake"]
 
 
 def hangman():
@@ -33,7 +33,7 @@ def hangman():
     elif guess in word:
         guessed.extend([guess])
         index = word.find(guess)
-        word = word[:index]+ "_" + word[index+1:]
+        word = word[:index] + "_" + word[index+1:]
         display = display[:index] + guess + display[index+1:]
         print(display+"\n")
     elif guess in guessed:
@@ -43,7 +43,7 @@ def hangman():
         count+=1
 
         if count==1:
-        print("   _____ \n"
+            print("   _____ \n"
               "  |      \n"
               "  |      \n"
               "  |      \n"
@@ -51,7 +51,7 @@ def hangman():
               "  |      \n"
               "  |      \n"
               "__|__\n")
-        print("Incorrect guess." + str(limit - count) + "guesses left\n")
+            print("Incorrect guess." + str(limit - count) + "guesses left\n")
 
         elif count == 2:
             print("   _____ \n"
@@ -100,7 +100,7 @@ def hangman():
             print("Nice one, you guessed the word")
             replay()
 
-        elif count !==limit:
+        elif count != limit:
             hangman()
      
 def replay():
