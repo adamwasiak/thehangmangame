@@ -15,9 +15,9 @@ dictionary = ["year", "dog", "name", "twenty", "car", "february",
 
 
 def hangman():
-    """ 
+    """
     Hangman logic function
-    """ 
+    """
     global count
     global display
     global word
@@ -40,7 +40,7 @@ def hangman():
         print("You have already selected this letter.\n")
 
     else:
-        count +=1
+        count += 1
 
         if count == 1:
             print("   _____ \n"
@@ -93,7 +93,7 @@ def hangman():
                   "  |    / \ \n"
                   "__|__\n")
             print("You got it wrong. You lost\n")
-            print("The word is:", guessed,word)
+            print("The word is:", guessed, word)
             replay()
 
         if word == '_' * length:
@@ -109,15 +109,15 @@ def replay():
     """
     global play_game
     play_game = input("Would you like to play again?Yes=y, No=n\n")
-    while play_game not in ["y","n","Y","N"]:
+    while play_game not in ["y", "n", "Y", "N"]:
         play_game = input("Would you like to play again?Yes=y, No=n\n")
-    if play_game =="y":
+    if play_game == "y":
         main()
-    elif play_game =="n":
+    elif play_game == "n":
         print("See you soon!")
-        exit() 
+        exit()
         
-def main(): 
+def main():
     """
     main function of the game including all parameters
     """
@@ -139,4 +139,3 @@ main()
 
 
 hangman()
-
