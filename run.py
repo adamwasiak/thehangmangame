@@ -102,12 +102,21 @@ def hangman():
 
         elif count !==limit:
             hangman()
-
-
+     
+def replay():
+    """
+    Function to replay the game again
+    """
+    play_game
+    play_game = input("Would you like to play again?Yes=y, No=n\n")
+    while play_game not in ["y","n","Y","N"]:
+        play_game = input("Would you like to play again?Yes=y, No=n\n")
+    if play_game =="y":
+        main()
+    elif play_game =="n":
+        print("See you soon!")
+        exit() 
         
-
-def replay():    
-
 def main(): 
     """
     main function of the game including all parameters
