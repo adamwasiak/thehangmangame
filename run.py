@@ -15,6 +15,16 @@ dictonary= ["year","dog","name","twenty","car","february",
 
 
 def hangman():
+    """ 
+    Hangman logic function
+    """ 
+    
+    limit = 5
+    guess = input("This is the selected word:" + display + "Take a guess:\n")
+    guess = guess.strip()
+    if len(guess.strip()) == 0 or len(guess.strip()) == "2" or guess == "9":
+        print("Incorrect Input, please use letter instead\n")
+        
 
 def replay():    
 
