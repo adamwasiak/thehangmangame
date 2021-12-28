@@ -7,7 +7,7 @@ print("Hello " + name + "," + " enjoy the game!")
 print("Are you ready?, let's start")
 
 # Add dictonary for words selection
-dictonary = ["year", "dog", "name", "twenty", "car", "february",
+dictionary = ["year", "dog", "name", "twenty", "car", "february",
              "window", "computer", "coffee", "hawk", "shopping", "bat",
              "lane", "tower", "crystal", "gold", "silver", "cat",
              "impossible", "nice", "game", "sharp", "books", "radio",
@@ -127,7 +127,7 @@ def main():
     global guessed
     global length
     global play_game
-    word = random.choice(dictonary)
+    word = random.choice(dictionary)
     length = len(word)
     count = 0
     display = '_' * length
