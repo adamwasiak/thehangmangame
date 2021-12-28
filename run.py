@@ -44,13 +44,13 @@ def hangman():
 
         if count == 1:
             print("   _____ \n"
-              "  |      \n"
-              "  |      \n"
-              "  |      \n"
-              "  |      \n"
-              "  |      \n"
-              "  |      \n"
-              "__|__\n")
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "__|__\n")
             print("Incorrect guess." + str(limit - count) + "guesses left\n")
 
         elif count == 2:
