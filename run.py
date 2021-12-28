@@ -18,7 +18,11 @@ def hangman():
     """ 
     Hangman logic function
     """ 
-    
+    count
+    display
+    word
+    guessed
+    play_game
     limit = 5
     guess = input("This is the selected word:" + display + "Take a guess:\n")
     guess = guess.strip()
@@ -121,7 +125,7 @@ def main():
     guessed = []
     play_game = ""
 
-    
+
 
 
 
