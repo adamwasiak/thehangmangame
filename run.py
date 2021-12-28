@@ -79,8 +79,22 @@ def hangman():
                   "  |      \n"
                   "__|__\n")
             print("Incorrect guess." + str(limit - count) + "guesses left\n")
-
+        elif count == 5:
+            print("   _____ \n"
+                  "  |     | \n"
+                  "  |     |\n"
+                  "  |     | \n"
+                  "  |     O \n"
+                  "  |    /|\ \n"
+                  "  |    / \ \n"
+                  "__|__\n")
+            print("You got it wrong. You lost\n")
+            print("The word is:", guessed,word)
             
+
+
+
+
 
 
 
