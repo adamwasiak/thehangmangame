@@ -49,6 +49,45 @@ def hangman():
               "__|__\n")
         print("Incorrect guess." + str(limit - count) + "guesses left\n")
 
+        elif count == 2:
+            print("   _____ \n"
+                  "  |     | \n"
+                  "  |     |\n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "__|__\n")
+            print("Incorrect guess." + str(limit - count) + "guesses left\n")
+        elif count == 3:
+            print("   _____ \n"
+                  "  |     | \n"
+                  "  |     |\n"
+                  "  |     | \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "__|__\n")
+            print("Incorrect guess." + str(limit - count) + "guesses left\n")
+        elif count == 4:
+            print("   _____ \n"
+                  "  |     | \n"
+                  "  |     |\n"
+                  "  |     | \n"
+                  "  |     O \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "__|__\n")
+            print("Incorrect guess." + str(limit - count) + "guesses left\n")
+
+            
+
+
+
+
+
+
+
 
         
 
