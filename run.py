@@ -90,7 +90,15 @@ def hangman():
                   "__|__\n")
             print("You got it wrong. You lost\n")
             print("The word is:", guessed,word)
-            
+            replay()
+
+        if word == '_' * length:
+            print("Nice one, you guessed the word")
+            replay()
+
+        elif count !==limit:
+            hangman()
+
 
 
 
