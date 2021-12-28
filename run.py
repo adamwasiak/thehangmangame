@@ -6,11 +6,11 @@ name = input("Enter your name please:")
 print("Hello " + name + "," + " enjoy the game!")
 print("Are you ready?, let's start")
 
-#Add dictonary for words selection
+# Add dictonary for words selection
 dictonary = ["year", "dog", "name", "twenty", "car", "february",
-    "window", "computer", "coffee", "hawk", "shopping", "bat", 
-    "lane", "tower", "crystal", "gold", "silver", "cat", 
-    "impossible", "nice", "game", "sharp", "books", "radio", 
+    "window", "computer", "coffee", "hawk", "shopping", "bat",
+    "lane", "tower", "crystal", "gold", "silver", "cat",
+    "impossible", "nice", "game", "sharp", "books", "radio",
     "speed", "slow", "nothing", "history", "mountain", "lake"]
 
 
@@ -18,11 +18,11 @@ def hangman():
     """ 
     Hangman logic function
     """ 
-    count
-    display
-    word
-    guessed
-    play_game
+    global count
+    global display
+    global word
+    global guessed
+    global play_game
     limit = 5
     guess = input("This is the selected word:" + display + "Take a guess:\n")
     guess = guess.strip()
@@ -107,7 +107,7 @@ def replay():
     """
     Function to replay the game again
     """
-    play_game
+    global play_game
     play_game = input("Would you like to play again?Yes=y, No=n\n")
     while play_game not in ["y","n","Y","N"]:
         play_game = input("Would you like to play again?Yes=y, No=n\n")
@@ -121,18 +121,25 @@ def main():
     """
     main function of the game including all parameters
     """
-    count
-    display
-    word
-    guessed
-    length
-    play_game
+    global count
+    global display
+    global word
+    global guessed
+    global length
+    global play_game
     word = random.choice(dictonary)
     length = len(word)
     count = 0
     display = '_' * length
     guessed = []
     play_game = ""
+
+
+main()
+
+
+hangman()
+
 
 
 
