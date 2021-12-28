@@ -100,26 +100,28 @@ def hangman():
             hangman()
 
 
-
-
-
-
-
-
-
-
-
-
-
         
 
 def replay():    
 
 def main(): 
+    """
+    main function of the game including all parameters
+    """
     count
     display
     word
     guessed
+    length
+    play_game
+    word = random.choice(dictonary)
+    length = len(word)
+    count = 0
+    display = '_' * length
+    guessed = []
+    play_game = ""
+
+    
 
 
 
