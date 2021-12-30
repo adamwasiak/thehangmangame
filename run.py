@@ -132,7 +132,7 @@ def main():
     word = random.choice(dictionary)
     length = len(word)
     count = 0
-    display = '_' * length
+    display = ' _ ' * length
     guessed = []
     play_game = ""
 
