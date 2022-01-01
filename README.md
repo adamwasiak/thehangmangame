@@ -49,7 +49,7 @@ Some of the key future developments are as follows:
 
 1. Extend the user input validation to capature non alphabetical characters such as numbers or any other characters.
 2. In order to enhance user experience a graphical additions to make the game more entertaining will need to be considered. These could include some static graphics around the      play terminal.
-3. In order to attract new users or to retain exisiting users a user selection could be introduced. This is a user can select what thyme they would like to get the words created    for. This would certainly make the experience a lot more entertaining for the end user.
+3. In order to attract new users or to retain exisiting users a user selection could be introduced. This is where a user can select what thyme they would like to get the words      created for. This would certainly make the experience a lot more entertaining for the end user.
 4. As the game uses an external resource for word section a backup will need to be arranged in a form of an array of word, should the external resource become unavailable.
 
 
@@ -89,11 +89,7 @@ The result of code testing has not detected any error or issues requiring an imm
   
   - at the time of the deployment of the project the validation of the user input, whereby the user includes numeric value, still remains unresolved due to time constraints.
   
-  
-  
-
-
- 
+   
 ## Deployment 
 
 The site was deployed to Heroku pages using the following steps:
