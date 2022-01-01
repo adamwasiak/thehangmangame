@@ -1,18 +1,11 @@
-import random
+from time import sleep
+from urllib.request import urlopen
 
 # Welcome message to the player and player name input
 print("Hangman game by Adam Wasiak, welcome!")
 name = input("Enter your name please:")
 print("Hello " + name + "," + " enjoy the game!")
 print("Are you ready?, let's start")
-
-# Add dictonary for words selection
-dictionary = ["year", "dog", "name", "twenty", "car", "february",
-              "window", "computer", "coffee", "hawk", "shopping", "bat",
-              "lane", "tower", "crystal", "gold", "silver", "cat",
-              "impossible", "nice", "game", "sharp", "books", "radio",
-              "speed", "slow", "nothing", "history", "mountain", "lake"]
-
 
 def hangman():
     """
@@ -26,7 +19,7 @@ def hangman():
     limit = 5
     guess = input("This is the selected word:" + display + "Take a guess:\n")
     guess = guess.strip()
-    print(word)
+    
     if len(guess.strip()) == 0 and len(guess) != 1:
         print("Incorrect Input, please ensure that you use a letter. \n")
         hangman()
@@ -51,7 +44,7 @@ def hangman():
          
     else:
         count += 1
-
+        guessed.append(guess)
         if count == 1:
             print("   _____ \n"
                   "  |      \n"
@@ -103,7 +96,7 @@ def hangman():
                   "  |    / \ \n"
                   "__|__\n")
             print("You got it wrong. You lost\n")
-            print("The word is:", guessed, word)
+            print("The word is:", word)
             replay()
 
         if count != limit:
@@ -135,7 +128,11 @@ def main():
     global guessed
     global length
     global play_game
-    word = random.choice(dictionary)
+
+    # Performs a GET request to the site below for a random word selection and then decodes it to utf-8
+    data = urlopen("https://random-word-api.herokuapp.com/word?number=1")
+    data = data.read().decode('utf-8')
+    word = data[2:len(data)-2]
     length = len(word)
     count = 0
     display = '_ ' * length
