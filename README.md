@@ -24,10 +24,23 @@ This simple game was created for the purpose of completing the second Milestone 
 
 ## Features 
 
+The below outlines key features of the game.
 
+1. **Welcome Screen**- user is welcomed by an initial message.
 
+![Welcome Screen](assets/images/welcomescreen.png)
 
+3. **Name Input**- user is required to input their name in order to commence the game. The input of the name if used to personalise welcome message to the user.
 
+![Name Selection](assets/images/nameselection.png)
+
+5. **Letter selection**- user is required to select a letter in attempt to guess the word randomly selected by the game's logic.
+
+![Letter Selected](assets/images/letterselected.png)
+
+7. **Game**- as the game progressed and depending on the user's luck, the drawing of a hangman will progress and be reflected on the screen.
+
+![Game Screen](assets/images/game.png)
 
 
 ## Future developments
