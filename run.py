@@ -27,7 +27,7 @@ def hangman():
     guess = input("This is the selected word:" + display + "Take a guess:\n")
     guess = guess.strip()
     print(word)
-    if len(guess.strip()) == 0:
+    if len(guess.strip()) == 0 and len(guess) != 1:
         print("Incorrect Input, please ensure that you use a letter. \n")
         hangman()
     elif guess in guessed:
@@ -142,8 +142,6 @@ def main():
     guessed = []
     play_game = ""
 
-
 main()
-
 
 hangman()
