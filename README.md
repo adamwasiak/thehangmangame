@@ -11,21 +11,15 @@ Please visit the following [link](https://thehangmangame2022.herokuapp.com/) to 
 
 This simple game was created for the purpose of completing the second Milestone Project for the Code Institute's Diploma in Software Development (E-commerce Applications). The logic for the game was built using the knowledge gained from Python module content of the course. The target audience for this website are users who would like to avail of quick, simple game of Hangman. 
 
-## User Experience Design  
-
-
-
-
 ## Game design 
  
 
--**Concept**- 
+-**Concept**- the key concept of the game is to get the user to guess a randomly selected word of a random length. The logic is built using Python languague and incorporates       functions, loop and random selection of words using external resource. The game does not use any exnhanced graphical libraries but rather uses keyboard characters to visualise   hangman.
 
--**Colors and background**- 
-
--**Typography** – 
-
--**Rules** - 
+-**Rules** - each user has 5 attempts to select letters, which make up the randomly selected word. If the user's choice is correct letter will be revealed in the selected word. 
+ Should the user's choice not be correct a drawing will progress illustrating a hanman. 
+ The game is won by the user once all the letters are guessed correctly. The user loses the game once the user runs out of the 5 attempts and the full drawing of the hangman
+ is completed. 
 
 
 ## Features 
