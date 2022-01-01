@@ -30,16 +30,25 @@ def hangman():
     if len(guess.strip()) == 0:
         print("Incorrect Input, please ensure that you use a letter. \n")
         hangman()
-
-    elif guess in word:
-        guessed.extend([guess])
-        index = word.find(guess)
-        word = word[:index] + "_" + word[index+1:]
-        display = display[:index] + guess + display[index+1:]
-        print(display+"\n")
     elif guess in guessed:
         print("You have already selected this letter.\n")
+        hangman()
+    elif guess in word:
+        guessed.append(guess)
+        display = ""
+        for i in range(len(word)):
+            if (word[i] in guessed):
+                display += word[i]
+            else:
+                display += "_"
+            display += " "
 
+        if display.replace(" ", "") == word:
+            print("Nice one, you guessed the word")
+            replay()
+
+        hangman()
+         
     else:
         count += 1
 
@@ -97,11 +106,7 @@ def hangman():
             print("The word is:", guessed, word)
             replay()
 
-        if word == '_' * length:
-            print("Nice one, you guessed the word")
-            replay()
-
-        elif count != limit:
+        if count != limit:
             hangman()
 
 
