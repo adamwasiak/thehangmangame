@@ -61,7 +61,7 @@ def hangman():
                   "  |      \n"
                   "  |      \n"
                   "__|__\n")
-            print("Incorrect guess." + str(limit - count) + "guesses left\n")
+            print("Incorrect guess." + str(limit - count) + " guesses left\n")
 
         elif count == 2:
             print("   _____ \n"
@@ -72,7 +72,7 @@ def hangman():
                   "  |      \n"
                   "  |      \n"
                   "__|__\n")
-            print("Incorrect guess." + str(limit - count) + "guesses left\n")
+            print("Incorrect guess." + str(limit - count) + " guesses left\n")
         elif count == 3:
             print("   _____ \n"
                   "  |     | \n"
@@ -82,7 +82,7 @@ def hangman():
                   "  |      \n"
                   "  |      \n"
                   "__|__\n")
-            print("Incorrect guess." + str(limit - count) + "guesses left\n")
+            print("Incorrect guess." + str(limit - count) + " guesses left\n")
         elif count == 4:
             print("   _____ \n"
                   "  |     | \n"
@@ -92,7 +92,7 @@ def hangman():
                   "  |      \n"
                   "  |      \n"
                   "__|__\n")
-            print("Incorrect guess." + str(limit - count) + "guesses left\n")
+            print("Incorrect guess." + str(limit - count) + " guess left\n")
         elif count == 5:
             print("   _____ \n"
                   "  |     | \n"
@@ -138,7 +138,7 @@ def main():
     word = random.choice(dictionary)
     length = len(word)
     count = 0
-    display = ' _ ' * length
+    display = '_ ' * length
     guessed = []
     play_game = ""
 
