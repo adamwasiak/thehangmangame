@@ -40,7 +40,9 @@ This simple game was created for the purpose of completing the second Milestone 
 
 Some of the key future developments are as follows:
 
-
+1. Extend the user input validation to capature non alphabetical characters such as numbers or any other characters.
+2. In order to enhance user experience a graphical additions to make the game more entertaining will need to be considered. These could include some static graphics around the      play terminal.
+3. In order to attract new users or to retain exisiting users a user selection could be introduced. This is a user can select what thyme they would like to get the words created    for. This would certainly make the experience a lot more entertaining for the end user.
 
 ## Testing 
 Throughout the course of testing the following key test areas were focused on:
