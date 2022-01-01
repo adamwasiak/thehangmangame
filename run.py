@@ -4,14 +4,16 @@ from urllib.request import urlopen
 # Welcome message to the player and player name input
 print("Hangman game by Adam Wasiak, welcome!")
 name = input("Enter your name please:")
-sleep(1) # time delay to user message being displayed
+sleep(1)  # time delay to user message being displayed
 print("Hello " + name + "," + " enjoy the game!")
 print("Are you ready?, let's start")
 sleep(1)
 
+
 def hangman():
     """
     Hangman logic function
+
     """
     global count
     global display
@@ -21,17 +23,19 @@ def hangman():
     limit = 5
     guess = input("This is the selected word:" + display + "Take a guess:\n")
     guess = guess.strip()
-    
-    if len(guess.strip()) == 0 and len(guess) != 1: #user input validation for blank input and if input is not 1 character
+# user input validation for blank input and if input is not 1 character
+    if len(guess.strip()) == 0 and len(guess) != 1:
         print("Incorrect Input, please ensure that you use a letter. \n")
         hangman()
-    elif guess in guessed: # validation for selection of the same letters by the user
+    elif guess in guessed:
+        # validation for selection of the same letters by the user
         print("You have already selected this letter.\n")
         hangman()
     elif guess in word:
         guessed.append(guess)
         display = ""
-        for i in range(len(word)): #loop for comparing user selection with the actual word selected
+        for i in range(len(word)):
+            # loop for comparing user selection with the actual word selected
             if (word[i] in guessed):
                 display += word[i]
             else:
@@ -43,7 +47,7 @@ def hangman():
             replay()
 
         hangman()
-         
+
     else:
         count += 1
         guessed.append(guess)
@@ -131,7 +135,8 @@ def main():
     global length
     global play_game
 
-    # Performs a GET request to the site below for a random word selection and then decodes it to utf-8
+    # Performs a GET request to the site below for
+    # a random word selection and then decodes it to utf-8
     data = urlopen("https://random-word-api.herokuapp.com/word?number=1")
     data = data.read().decode('utf-8')
     word = data[2:len(data)-2]
