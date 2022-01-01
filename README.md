@@ -71,6 +71,17 @@ Throughout the course of testing the following key test areas were focused on:
  
 ## Deployment 
 
+The site was deployed to Heroku pages using the following steps:
+
+1. Sign up and Login to Heroku
+2. Click on the "NEW APPLICATION" and create an App name and choose your region (Europe for this project)
+3. Click on "Deploy" and choose your deployment method
+4. If you are connecting with Github choose your main branch and find your repository
+5. Add config vars PORT = 8000 and buildpacks python and nodejs
+6. Click on deploy manually or automatically (automaticlaly for this project)
+7. When selecting Automatic deploayment, Deploy Branch still needs to be selected also.
+8. The project has now been deployed
+9. When deployed click on View on the bottom of the page
 
 ## Credits
 
