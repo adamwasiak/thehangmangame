@@ -1,14 +1,15 @@
 # The Hangman Game by Adam Wasiak
-Simple online rock paper scissors game.
+Simple hangman game with unlimited random word selection
 Quick and simple entertainment.
 
-Please visit the following link to access the game. [here](https://thehangmangame2022.herokuapp.com/)
+Please visit the following [link](https://thehangmangame2022.herokuapp.com/) to access the game.
 
 Placeholder for a screenshot
 
 ## Milestone Project 3
 ### Purpose 
 
+This simple game was created for the purpose of completing the second Milestone Project for the Code Institute's Diploma in Software Development (E-commerce Applications). The logic for the game was built using the knowledge gained from Python module content of the course. The target audience for this website are users who would like to avail of quick, simple game of Hangman. 
 
 ## User Experience Design  
 
