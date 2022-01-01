@@ -62,9 +62,15 @@ Throughout the course of testing the following key test areas were focused on:
 
   **Fixed Bugs**
   
-
+  - at some stage of development it was identified that user input validation, specifically when user select the same letter again, was not functoning correctly. This has been       subsequently resolved through code correction.
+  - it was also identified that a space in front of underscore (representing each letter of the word) was causing a distorted view for the user as to what the actual length of       the word. This was resolved by removing a space in front of underscore character to correct visibility of the letter placeholders.
+  - 
   
-  **Unfixed Busg**
+  **Unfixed Bugs**
+  
+  -at the time of the deployment of the project the validation of the user input, whereby the user includes numeric value, still remains unresolved due to time constraints.
+  
+  
   
 
 
