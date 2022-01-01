@@ -4,8 +4,10 @@ from urllib.request import urlopen
 # Welcome message to the player and player name input
 print("Hangman game by Adam Wasiak, welcome!")
 name = input("Enter your name please:")
+sleep(1)
 print("Hello " + name + "," + " enjoy the game!")
 print("Are you ready?, let's start")
+sleep(1)
 
 def hangman():
     """
