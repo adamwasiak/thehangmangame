@@ -1,5 +1,5 @@
 # The Hangman Game by Adam Wasiak
-Simple hangman game with unlimited random word selection
+Simple hangman game with unlimited random word selection.
 Quick and simple entertainment.
 
 Please visit the following [link](https://thehangmangame2022.herokuapp.com/) to access the game.
@@ -50,18 +50,18 @@ Throughout the course of testing the following key test areas were focused on:
 In terms of functional testing the following steps have been taken:
 
 1. **User input** - it has been tested that a user can submit an input successfully for both they own name and also submission of selected letters to guess the word. Completed      successfully.
-2. **User invalid input** - it has been validated that user submitting no character at all, will return respective message back to the user that valid input is required.
+2. **User input validation** - it has been validated that user submitting no character at all, will return respective message back to the user that valid input is required.
    In addition it was also validated that user submitting the same letter again, will provide respective message to the user advising that a letter has previously been selected.
    Completed successfully.
-3. 
-
-
-
+3. **Visual aspects** -  it has been also reviewed and validated that each incorrect guess by a user will add addtional step to creating a simple drawing to reflect a hanging      man. Completed successfully.
+4. **Game replay** - after losing or winning a game, the user will be given a selection to either play the game again or to terminate playing. As part of the testing it has been    validated that the replay function works correct and appropriate user messages are displayed. Completed successfully.
+5. **Word random selection** - testing has been completed to ensure that each time a new and a random word is generated and obtained from external resource linked to this          project. Completed successfully.
 
 
 **Code validator testing**
 
-
+The code itself has been validated through PEP8 validator available at http://pep8online.com/
+The result of code testing has not detected any error or issues requiring an immediate attention.
 
 
 
