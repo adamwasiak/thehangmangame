@@ -4,7 +4,7 @@ Quick and simple entertainment.
 
 Please visit the following [link](https://thehangmangame2022.herokuapp.com/) to access the game.
 
-Placeholder for a screenshot
+![Welcome Screen](assets/images/welcomescreen.png)
 
 ## Milestone Project 3
 ### Purpose 
@@ -65,7 +65,7 @@ In terms of functional testing the following steps have been taken:
 The code itself has been validated through PEP8 validator available at http://pep8online.com/
 The result of code testing has not detected any error or issues requiring an immediate attention.
 
-
+![Pep8 Validation](assets/images/pep8validation.png)
 
 
 **Bugs**
