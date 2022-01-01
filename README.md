@@ -95,9 +95,10 @@ The site was deployed to Heroku pages using the following steps:
 
 ## Credits
 
-
-
-Thanky you to Code Institute for excellent module content, Code Institue support team and my mentor Daisy for guidance and support.
+1. Credit to creator of the random word selector. This external source is used for random selection of words for this game.
+   https://random-word-api.herokuapp.com/word?number=1
+2. The project has been inspired by a number of external projects available on the web. Number of external projects have been reviewed as part of my investigation into suitable    approach for my project.
+3. Thanky you to Code Institute for excellent module content, Code Institue support team and my mentor Daisy for guidance and support.
 
 
 
