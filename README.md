@@ -1,31 +1,91 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Hangman Game by Adam Wasiak
+Simple online rock paper scissors game.
+Quick and simple entertainment.
 
-Welcome adamwasiak,
+Please visit the following link to access the game. [here](https://thehangmangame2022.herokuapp.com/)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Placeholder for a screenshot
 
-## Reminders
+## Milestone Project 3
+### Purpose 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+## User Experience Design  
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Game design 
+ 
 
-Connect your GitHub repository and deploy as normal.
+-**Concept**- 
 
-## Constraints
+-**Colors and background**- 
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+-**Typography** – 
 
------
-Happy coding!
+-**Rules** - 
+
+
+## Features 
+
+
+
+
+
+
+
+## Future developments
+
+Some of the key future developments are as follows:
+
+
+
+## Testing 
+Throughout the course of testing the following key test areas were focused on:
+
+**Functional**
+
+
+
+
+
+**Code validator testing**
+
+
+
+
+
+
+**Bugs**
+
+  **Fixed Bugs**
+  
+
+  
+  **Unfixed Busg**
+  
+
+
+ 
+## Deployment 
+
+
+## Credits
+
+
+
+Thanky you to Code Institute for excellent module content, Code Institue support team and my mentor Daisy for guidance and support.
+
+
+
+
+
+
+
+
+
+
+
+
+
